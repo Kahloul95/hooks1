@@ -21,6 +21,12 @@ function App() {
       setMoviesList(moviesData.filter((el) => el.rating === ratingSearch));
   };
 
+  const addNewMovie = (newMovie) => {
+    moviesData.push(newMovie);
+    console.log(moviesData);
+    setMoviesList([...moviesList, newMovie]);
+  };
+
   useEffect(() => {
     filterByName();
   }, [nameSearch]);
@@ -38,10 +44,11 @@ function App() {
       />
       <MovieList moviesList={moviesList} />
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <AddMovie />
+        <AddMovie addNewMovie={addNewMovie} />
       </div>
     </div>
   );
 }
 
 export default App;
+
