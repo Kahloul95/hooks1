@@ -1,0 +1,9 @@
+.NotFound {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(243, 161, 161);
+  }
+  

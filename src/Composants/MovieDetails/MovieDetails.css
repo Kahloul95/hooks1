@@ -1,0 +1,12 @@
+.MovieDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+  }
+  
+  .MovieDetails div {
+    margin-top: 10px;
+    color: aliceblue;
+  }
